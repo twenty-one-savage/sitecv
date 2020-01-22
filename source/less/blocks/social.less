@@ -1,0 +1,38 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 152px;
+  .reset-list();
+}
+
+.social__item {
+  background-color: @blue;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 48px;
+  color: @white;
+}
+
+.social__link:hover {
+  background-color: #669ec0;
+}
+
+.social__link:active {
+  background-color: #5496bd;
+
+  svg {
+    opacity: 0.3;
+  }
+}
+
+.social__icon-twitter,
+.social__icon-facebook,
+.social__icon-youtube {
+  fill: @white;
+}
