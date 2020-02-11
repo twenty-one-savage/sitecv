@@ -1,0 +1,154 @@
+.slick-arrow:before
+	content ""
+	opacity 0.6
+	background-image: url(/assets/templates/images/base/icon-arrow_back.svg)
+	width 40px
+	height 60px
+	display block
+	background-repeat no-repeat
+	background-position center
+
+.slick-next:before
+	-webkit-transform rotate(180deg)
+	-moz-transform rotate(180deg)
+	-ms-transform rotate(180deg)
+	-o-transform rotate(180deg)
+	transform rotate(180deg)
+
+.slick-prev
+	left 0
+
+.slick-next
+	right 0
+
+.slick-disabled
+  display none
+
+// .slick-dots
+//   height 15px
+//   margin-top 15px
+//   &.dots_white
+//     bottom 30px
+
+// .slick-dots li button
+//   width 10px
+//   height 10px
+//   padding 0
+//   margin 0 auto
+
+// .slick-dots
+//   li button:before
+//     content ""
+//     background transparent
+//     border-radius 50%
+//     border 1px solid #434345
+//     opacity 1
+//     width 10px
+//     height 10px
+//     line-height 10px
+//     position relative
+//     display block
+//   &.dots_white
+//     li button:before
+//       border-color #efefef
+
+// .slick-dots li.slick-active button:before
+//   background #434345
+//   opacity 1
+
+// .slick-dots.dots_white li.slick-active button:before
+//   background #fff
+
+// .slick-dots li
+//   text-align center
+//   height 10px
+//   width 15px
+
+.slick-dots
+	bottom 50px
+	left 100px
+	width auto
+	& li
+		width 50px
+		height 4px
+		margin 0 3px
+		&:first-child
+			margin-left 0
+		&:last-child
+			margin-right 0
+		&.slick-active button:before
+			background-color $primary
+		& button
+			padding 0
+			width 50px
+			height 4px
+			background-color $primary-active
+			&:before
+				content ''
+				width 50px
+				height 4px
+				display block
+			&:after
+				content ''
+				position absolute
+				padding 10px
+				display block
+				width 100%
+				top -8px
+
+@media (max-width 1199.98px)
+	.slick-dots
+		left 80px
+		bottom 30px
+		& li
+			width 40px
+			& button
+				width 40px
+				&:before
+					width 40px
+
+@media (max-width: 991.98px)
+	.slick-arrow
+	.slick-arrow:before
+		width 30px
+	.slick-dots
+		bottom 30px
+		& li
+			width 30px
+			& button
+				width 30px
+				&:before
+					width 30px
+					bottom 0
+
+	.slick-arrow
+		margin-top -13px
+		margin-left: -30px
+
+@media (max-width 767.98px)
+	.slick-dots
+		bottom -30px
+		left auto
+		width 100%
+		li
+			margin 0 5px
+
+@media (max-width 575.98px)
+	.slick-dots
+		& li
+			// width 20px
+			& button
+				// width 20px
+				&:before
+					// width 20px
+					bottom 0
+
+	.slick-arrow
+	.slick-arrow:before
+		width 25px
+		// height 37px
+		// margin-right: -10px
+
+	.slick-arrow
+		margin-top -10px
+		margin-left -10px

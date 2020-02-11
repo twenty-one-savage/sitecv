@@ -1,0 +1,53 @@
+// .overflow
+// 	&-flex
+// 		padding-bottom 20px
+// 		display flex
+// 		flex 1
+// 		overflow auto
+// 		position relative
+// 		&::after
+// 			content ''
+// 			position absolute
+// 			top 0
+// 			right 0
+// 			bottom 0
+// 			display block
+// 			width 150px
+// 			background-image linear-gradient(270deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.8) 24%, rgba(255,255,255,0.7) 54%, rgba(255,255,255,0.4) 85%, rgba(255,255,255,0) 100%)
+// 	&-box
+// 		min-height -webkit-min-content
+// 		min-height -moz-min-content
+// 		min-height min-content
+// 	&-element
+// 		flex 0 0 32%
+// 		max-width 32%
+@media (max-width 575.98px)
+	.overflow-container
+		-ms-overflow-x auto
+		overflow-x auto
+	.overflow-row
+		-webkit-flex-flow nowrap
+		-ms-flex-flow nowrap
+		flex-flow nowrap
+		padding-bottom 2.5rem
+		&_wide
+			display block
+			margin-bottom 30px
+	.overflow-item
+		-webkit-box-shadow $shadow
+		box-shadow $shadow
+		padding 1.5rem
+		-webkit-border-radius $border-radius
+		border-radius $border-radius
+		min-width 230px
+		height 100%
+		max-width 350px
+		margin auto
+		&_clean
+			box-shadow none
+			padding: 0
+			border-radius none
+		&_wide
+			float left
+			width 230px
+

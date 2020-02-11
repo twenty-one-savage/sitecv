@@ -1,0 +1,265 @@
+.slider-gallery
+	display flex
+	-webkit-align-items center
+	align-items center
+	margin 0 -2.8rem
+	.card
+		padding 0 1rem
+.slider__image
+	margin auto
+	width 100%
+
+.slider-nav__item
+	margin 5px
+	position relative
+	// max-width 110px
+	&:after
+		content ""
+		position absolute
+		left 0
+		top 0
+		bottom 0
+		right 0
+		border 2px solid $primary
+		display none
+.slider
+	.slider-nav__image
+		display inline-block
+		width 100%
+		box-shadow $shadow-sm
+
+.slider-for__image
+		display block
+		margin 0 auto
+		max-height 500px
+		box-shadow $shadow-sm
+.slider-nav .slick-current .slider-nav__item:after
+	display block
+	cursor pointer
+.slider-nav .slick-slide:hover .slider-nav__item:after
+	display block
+	cursor pointer
+
+.slider-arrow
+	margin-right 5px
+	text-align center
+	color $secondary
+	&:hover
+		cursor pointer
+		color $primary
+	.slider-arrow__icon
+		display block
+		line-height 1
+.slider-arrow_down
+	.slider-arrow__icon
+		-webkit-transform rotate(-90deg)
+		-moz-transform rotate(-90deg)
+		-ms-transform rotate(-90deg)
+		-o-transform rotate(-90deg)
+		transform rotate(-90deg)
+.slider-arrow
+	display flex
+	align-items center
+	margin 0
+	margin-bottom 5px
+.slider-arrow_left
+	margin-right 5px
+.slider-arrow_right
+	margin-left 5px
+.slider-nav
+.slider-for
+	display flex
+	-webkit-align-items stretch
+	 align-items stretch
+.slider-for
+	.slider-arrow
+		.i
+			font-size 30px
+.slider-arrow
+	.i
+		color $gray-light
+		// width 30px
+.slider-for__item
+	margin 5px
+	display inline-block
+	position relative
+	&:hover
+	&:focus
+		outline none
+.slider-nav
+	.slick-list
+		width calc(100% - 90px)
+		margin auto
+.slider-for__icon
+	position absolute
+	top 10px
+	right 10px
+	font-size 30px
+	color $main
+	&:hover
+	&:focus
+		color $primary
+.slider-arrow__icon
+	font-size 25px
+.dots_white li button:before
+	color white
+.dots_white li.slick-active button:before
+	color white
+
+.slick-dotted.slick-slider
+	margin-bottom 0
+@media (max-width 1199.98px)
+	.slider-arrow__icon
+		font-size 20px
+	.slider-gallery
+		margin 0 -1rem
+		.card
+			padding 0 .3rem
+		.slider-arrow
+			margin-right 0
+			margin-left 0
+@media (max-width 991.98px)
+	.slider-for__image
+		margin-left 0
+	.slider-for
+		.slider-arrow
+			.i
+				font-size 20px
+	.slider-nav
+		.slick-list
+			width calc(100% - 70px)
+	.slider-nav
+		display block
+		.slider-arrow
+			display block
+			margin-left 0
+			margin-right 0
+			.i
+				-webkit-transform rotate(90deg)
+				-moz-transform rotate(90deg)
+				-ms-transform rotate(90deg)
+				-o-transform rotate(90deg)
+				transform rotate(90deg)
+	.slider-for__item_one
+		max-width 600px
+@media (max-width 767.98px)
+	.slider-for__image
+		margin 0 auto
+	.slider-for
+		.slider-arrow
+			.i
+				font-size 30px
+	.slider-nav
+		display flex
+		.slick-list
+			width calc(100% - 70px)
+		.slider-arrow
+			display flex
+			.i
+				-webkit-transform rotate(0deg)
+				-moz-transform rotate(0deg)
+				-ms-transform rotate(0deg)
+				-o-transform rotate(0deg)
+				transform rotate(0deg)
+		.slider-arrow_left
+			margin-right 5px
+		.slider-arrow_right
+			margin-left 5px
+@media (max-width 575.98px)
+	.slider-nav
+		.slick-list
+			width calc(100% - 60px)
+@media (max-width 425.98px)
+	.slider-gallery
+		margin 0 auto
+		.card
+			padding 0
+
+
+.slider
+	&__link
+		display block !important
+	&__item
+		padding 130px 100px
+		text-transform uppercase
+		transition: all .5s ease
+	&__content
+		width 60%
+		height 180px
+	&__title
+		font-size 40px
+		font-weight 700
+		color $primary
+	&__text
+		font-size 24px
+		line-heigth 1.35
+		font-weight 100
+		color $main
+	&__description
+		font-size 16px
+		font-weight 100
+		color $main
+	&-arrow
+		position absolute
+		// margin-top -30px
+		top 50%
+		&_left
+			left 0
+		&_right
+			right 0
+		&:before
+			content none
+		& .slider-arrow__icon
+			z-index 99
+		& .i
+			color #fff
+			transition: all .2s ease
+			&:hover
+				color $primary
+			&:before
+				text-shadow: 1px 1px 3px rgba(0, 84, 159, 1)
+
+
+@media(max-width 1199.98px)
+	.slider
+		&__item
+			padding 80px
+		&__title
+			font-size 35px
+		&__text
+			font-size 18px
+		&__description
+			font-size 14px
+
+@media(max-width 767.98px)
+	.slider
+		&__content
+			height 160px
+		&__item
+			padding 60px
+		&__title
+			font-size 25px
+		&__text
+			font-size 18px
+			line-height 1.2
+		&__description
+			font-size 13px
+
+@media (max-width 575.98px)
+	.slider
+		&__content
+			height 140px
+		&__title
+			font-size 22px
+		&__text
+			font-size 17px
+		&__item
+			padding-left 15px
+			padding-right 15px
+@media (max-width 425.98px)
+	.slider
+		&__content
+			width 80%
+			height auto
+		&__description
+			display none

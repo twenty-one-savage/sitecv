@@ -1,0 +1,38 @@
+{
+  "fonts": [
+    "slick-carousel/slick/fonts/slick.eot",
+    "slick-carousel/slick/fonts/slick.svg",
+    "slick-carousel/slick/fonts/slick.ttf",
+    "slick-carousel/slick/fonts/slick.woff",
+    "fonts/PT_Sans/PTSans-Regular.ttf",
+    "fonts/PT_Sans/PTSans-Bold.ttf",
+    "fonts/PT_Sans/PTSans-BoldItalic.ttf",
+    "fonts/PT_Sans/PTSans-Italic.ttf",
+    "fonts/Gilroy/Gilroy-Regular.ttf",
+    "fonts/Gilroy/Gilroy-SemiBold.ttf",
+    "fonts/Gilroy/Gilroy-Thin.ttf",
+    "fonts/Gilroy/Gilroy-Bold.ttf",
+    "fonts/Gilroy/Gilroy-Light.ttf",
+    "fonts/Pehlevi/Pehlevi.ttf"
+  ],
+  "css": [
+    "bootstrap/4.2.1/css/bootstrap.min.css",
+    "slick-carousel/slick/slick.css",
+    "slick-carousel/slick/slick-theme.css",
+    "fancybox/dist/jquery.fancybox.min.css",
+    "pnotify/pnotify.custom.css"
+  ],
+  "js": [
+    "jquery/dist/jquery.min.js",
+    "bootstrap/4.2.1/js/bootstrap.bundle.min.js",
+    "svg4everybody/dist/svg4everybody.legacy.min.js",
+    "slick-carousel/slick/slick.js",
+    "fancybox/dist/jquery.fancybox.min.js",
+    "jquery-form/dist/jquery.form.min.js",
+    "pnotify/pnotify.custom.js",
+    "pnotify/default.js",
+    "inputmask_git/dist/jquery.inputmask.min.js",
+    "bower_components/isotope-layout/dist/isotope.pkgd.min.js",
+    "isotope-filter/dist/isotope-filter.js"
+  ]
+}
