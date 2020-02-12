@@ -1,0 +1,35 @@
+.main-nav
+  padding 0
+  margin 0
+  list-style none
+  text-transform uppercase
+  &__link
+    font-size 14px
+    color $white
+    &:hover
+      color $primary
+  &__item
+    display flex
+    align-items center
+
+.main-nav_collapse
+  .main-nav__item
+    padding 10px 0
+    font-weight 700
+    border-bottom 1px solid $primary
+    &:last-child
+      border-bottom none
+    & .main-nav__link
+      color $main
+
+@media(min-width 767.98px)
+  .main-nav
+    display flex
+    flex-wrap wrap
+    justify-content space-between
+    align-items center
+
+@media(max-width 1198.98px)
+  .main-nav
+    &__link
+      font-size 12px

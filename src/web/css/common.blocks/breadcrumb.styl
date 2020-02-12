@@ -1,0 +1,97 @@
+.breadcrumbs
+  background: none
+
+.breadcrumbs__absolute
+  position: absolute
+  z-index: 1
+  top: 0
+  right: 0
+  left: 0
+
+.breadcrumbs__absolute .breadcrumb
+  max-width: 1140px
+  margin: 0 auto
+
+.breadcrumb
+  margin-bottom 0
+  padding-left 0
+  padding-right 0
+  padding-top 0
+  font-size: 14px
+  background: none
+  border-radius: 0
+
+.breadcrumbs__absolute .breadcrumb
+  -webkit-justify-content flex-end
+  justify-content flex-end
+  padding-left 15px
+  padding-right 15px
+
+.breadcrumb a
+  color: $white
+  text-decoration: underline
+
+.breadcrumb .active a
+  color: #ddd
+  text-decoration none
+
+.breadcrumb li
+  margin-right: 5px
+  margin-left: 5px
+  font-style italic
+
+.breadcrumb li:first-child
+  margin-left 0
+
+.breadcrumb-item+.breadcrumb-item
+  padding-left 0
+
+.breadcrumb-item+.breadcrumb-item::before
+  content "/"
+  color white
+
+.breadcrumbs__theme_dark
+  & a
+  & .breadcrumb-item+.breadcrumb-item::before
+    color: $dark
+  .active a
+    color #979797
+
+@media (max-width: 1199.98px)
+  .breadcrumbs__absolute .breadcrumb
+    max-width: 960px
+
+@media (max-width: 991.98px)
+  .breadcrumbs__absolute .breadcrumb
+    max-width: 720px
+
+@media (max-width: 767.98px)
+  .breadcrumb
+    padding-left 0
+    padding-right 0
+
+  .breadcrumbs__absolute .breadcrumb
+    padding-left 25px
+    padding-right 25px
+
+  .breadcrumbs__absolute
+    position: relative
+
+  .breadcrumbs__absolute .breadcrumb
+    max-width: 540px
+    -ms-flex-pack: start
+    justify-content: flex-start
+
+
+  .breadcrumb
+    -webkit-justify-content flex-start
+    justify-content flex-start
+
+@media (max-width: 575.98px)
+  .valcatalog-breadcrumbs .breadcrumb
+    max-width: 100%
+
+  .breadcrumbs__absolute .breadcrumb
+    padding-left 15px
+    padding-right 15px
+

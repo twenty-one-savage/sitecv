@@ -1,0 +1,22 @@
+.feedback
+  &__title
+    margin-bottom 40px
+  &__subtitle
+    font-size 24px
+    text-align center
+  &__input
+  &__textarea
+    width 100%
+    padding 10px 15px
+    border 1px solid $primary
+    border-radius $border-radius
+    &:placeholder
+      font-style italic
+      color $gray-lighter
+  &__textarea
+    margin-top 10px
+
+@media(max-width 767.98px)
+  .feedback
+    &__subtitle
+      font-size 16px

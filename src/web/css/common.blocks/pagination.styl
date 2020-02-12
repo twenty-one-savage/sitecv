@@ -1,0 +1,42 @@
+.pagination
+	font-size 16px
+	border-radius 0
+.page-link
+	min-width 30px
+	min-height 30px
+	line-height 30px
+	color $white
+	border-radius $border-radius
+	background-color $dark
+	border 0
+	padding 0
+	&:hover
+	&:focus
+		color $white
+		background-color $primaryh
+.page-item
+	margin-right 5px
+	text-align center
+	&:last-child
+		margin-right 0
+	&.active
+		.page-link
+			background-color $primary
+			border-color $primary
+	&:first-child
+	&:last-child
+		.page-link
+			border-radius $border-radius
+.page-item.disabled .page-link
+	color #FFF
+	pointer-events none
+	cursor auto
+	background-color $dark
+	border-color $border-color
+
+.pagination__icon
+	font-size 11px
+
+@media (max-width 575.98px)
+	.pagination
+		overflow-x auto
