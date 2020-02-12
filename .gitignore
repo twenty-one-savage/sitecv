@@ -7,7 +7,7 @@
 # From the root of your project run
 # curl -O https://gist.githubusercontent.com/salcode/10017553/raw/.gitignore
 # to download this file
-#
+###
 # This file is tailored for a general web project, it
 # is NOT optimized for a WordPress project.  See
 # https://gist.github.com/salcode/b515f520d3f8207ecd04
