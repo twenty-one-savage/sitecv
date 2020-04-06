@@ -62,7 +62,7 @@
     "imagemin-webp": "^5.1.0",
     "lodash": "^4.17.15",
     "lodash.merge": "^4.6.2",
-    "minimist": "^1.2.0",
+    "minimist": "^1.2.3",
     "shelljs": "^0.8.3",
     "stream-combiner2": "^1.1.1",
     "svg4everybody": "^2.1.9",
