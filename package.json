@@ -58,7 +58,7 @@
     "gulp-gzip": "^1.4.2",
     "gulp-webp": "^4.0.1",
     "gulp.spritesmith": "^6.9.0",
-    "highlight.js": "^9.15.6",
+    "highlight.js": "^10.1.2",
     "imagemin-webp": "^5.1.0",
     "lodash": "^4.17.15",
     "lodash.merge": "^4.6.2",
