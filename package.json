@@ -60,7 +60,7 @@
     "gulp.spritesmith": "^6.9.0",
     "highlight.js": "^9.15.6",
     "imagemin-webp": "^5.1.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "lodash.merge": "^4.6.2",
     "minimist": "^1.2.0",
     "shelljs": "^0.8.3",
